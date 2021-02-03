@@ -1,0 +1,101 @@
+{
+  "name": "normal",
+  "preFlop":
+    {
+      "pocketHigh": "70",
+      "pocketMedium": "60",
+      "pocketLow": "50",
+
+      "suitedHigh": "65",
+      "suitedMedium": "55",
+      "suitedLow": "40",
+
+      "highHigh": "65",
+      "highMedium": "55",
+      "highLow": "40",
+
+      "mediumMedium": "55",
+      "mediumLow": "55",
+
+      "lowLow": "40"
+    },
+  "flop":
+  {
+    "quad": "100",
+
+    "flushHigh": "90",
+    "flushMedium": "90",
+    "flushLow": "90",
+
+    "straightHigh": "70",
+    "straightMedium": "70",
+    "straightLow": "70",
+
+    "setHigh": "65",
+    "setMedium": "55",
+    "setLow": "40",
+
+    "twoPairHigh": "65",
+    "twoPairMedium": "55",
+    "twoPairLow": "40",
+
+    "suitedHigh": "65",
+    "suitedMedium": "55",
+    "suitedLow": "40",
+
+    "highPair": "30"
+
+  },
+
+  "turn":
+  {
+    "quad": "100",
+
+    "flushHigh": "90",
+    "flushMedium": "90",
+    "flushLow": "90",
+
+    "straightHigh": "70",
+    "straightMedium": "70",
+    "straightLow": "70",
+
+    "setHigh": "65",
+    "setMedium": "55",
+    "setLow": "40",
+
+    "twoPairHigh": "65",
+    "twoPairMedium": "55",
+    "twoPairLow": "40",
+
+    "suitedHigh": "65",
+    "suitedMedium": "55",
+    "suitedLow": "40",
+
+    "highPair": "30"
+
+  },
+
+  "river":
+  {
+    "quad": "100",
+
+    "flushHigh": "90",
+    "flushMedium": "90",
+    "flushLow": "90",
+
+    "straightHigh": "70",
+    "straightMedium": "70",
+    "straightLow": "70",
+
+    "setHigh": "65",
+    "setMedium": "55",
+    "setLow": "40",
+
+    "twoPairHigh": "65",
+    "twoPairMedium": "55",
+    "twoPairLow": "40",
+
+    "highPair": "30"
+
+  }
+}

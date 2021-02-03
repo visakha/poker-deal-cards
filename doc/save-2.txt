@@ -1,0 +1,250 @@
+package com.example.demo.view
+
+import com.example.demo.data.Suit
+import com.example.demo.app.Styles
+import javafx.scene.layout.Priority
+import javafx.scene.paint.Color
+import tornadofx.*
+
+class MainView : View("Hello TornadoFX") {
+
+    val locHomerImg = "/images/other/homer.png"
+    val locCard1 = "/images/cards/2C.png"
+    val locCard2 = "/images/cards/7H.png"
+    val locXDealer = 350.0
+    val locYDealer = -80.0
+
+
+    override val root = vbox {
+        label(title) {
+            addClass(Styles.heading)
+        }
+        gridpane {
+            // ==================  ROW 1 ==============
+            row {
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("") // "R1~C1"// Corner
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 9") // R1 C2
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Dealer") // R1 C3
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 1") // R1 C4
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("") // R1 C 5 : Rt Corner
+                }
+            }
+                // ==================  ROW 2 ==============
+                row {
+                    stackpane {
+                        rectangle {
+                            fill = Color.PEACHPUFF
+                            width = 120.0
+                            height = 63.0
+                            arcWidth = 2.0
+                            arcHeight = 2.0
+                        }
+                        label("Plyr 8") // R2 C1
+                    }
+                    stackpane {
+                        rectangle {
+                            fill = Color.PEACHPUFF
+                            width = 120.0
+                            height = 63.0
+                            arcWidth = 2.0
+                            arcHeight = 2.0
+                        }
+                        label("Flop 1") // R2 C2
+                    }
+                    stackpane {
+                        rectangle {
+                            fill = Color.PEACHPUFF
+                            width = 120.0
+                            height = 63.0
+                            arcWidth = 2.0
+                            arcHeight = 2.0
+                        }
+                        label("Flop 2") // R2 C3
+                    }
+                    stackpane {
+                        rectangle {
+                            fill = Color.PEACHPUFF
+                            width = 120.0
+                            height = 63.0
+                            arcWidth = 2.0
+                            arcHeight = 2.0
+                        }
+                        label("Flop 3") // R2 C4
+                    }
+                    stackpane {
+                        rectangle {
+                            fill = Color.PEACHPUFF
+                            width = 120.0
+                            height = 63.0
+                            arcWidth = 2.0
+                            arcHeight = 2.0
+                        }
+                        label("Plyr 2") // R2 C5
+                    }
+
+                }
+            // row
+
+            // ==================  ROW 3 ==============
+            row {
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 7") // R3 C1
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Turn") // R3 C2
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("River") // R3 C3
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Pot$") // R3 C4
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 3") // R3 C5
+                }
+
+            } // row
+
+
+            // ==================  ROW 4 ==============
+            row {
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("") // Botm left   R4 C1
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 6") // R4 C2
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 5") // R4 C3
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label("Plyr 4") // R4 C4
+                }
+                stackpane {
+                    rectangle {
+                        fill = Color.PEACHPUFF
+                        width = 120.0
+                        height = 63.0
+                        arcWidth = 2.0
+                        arcHeight = 2.0
+                    }
+                    label(Suit.CLUBS.icon) {
+
+                        Color.RED
+                    } // botm right R4 C5
+//                    label()
+                }
+
+            }
+        } // row
+
+
+    }
+}

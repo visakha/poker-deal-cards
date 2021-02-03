@@ -1,0 +1,164 @@
+package com.example.demo.view
+
+import com.example.demo.app.Styles
+import javafx.scene.layout.Priority
+import javafx.scene.paint.Color
+import tornadofx.*
+
+class MainView : View("Hello TornadoFX") {
+
+    val locHomerImg = "/images/other/homer.png"
+    val locCard1 = "/images/cards/2C.png"
+    val locCard2 = "/images/cards/7H.png"
+    val locXDealer = 350.0
+    val locYDealer = -80.0
+
+
+    override val root = vbox {
+        label(title) {
+            addClass(Styles.heading)
+        }
+        anchorpane {
+            rectangle {
+                fill = Color.PEACHPUFF
+                width = 1200.0
+                height = 630.0
+                arcWidth = 20.0
+                arcHeight = 20.0
+            }
+            imageview("/images/other/pokerTable.jpg") {
+                scaleX = 2.0
+                scaleY = 2.0
+                x = 250.0
+                y = 150.0
+            }
+
+            // Dealer
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer
+                y = locYDealer
+            }
+
+            // Player 1
+            group {
+                vbox(7) {
+                    imageview(locHomerImg) {
+                        scaleX = 0.2
+                        scaleY = 0.2
+                        hgrow = Priority.NEVER
+                    }
+                    hbox() {
+                        // card 1
+//                        imageview(locCard1) {
+//                            scaleX = 0.2
+//                            scaleY = 0.2
+//                            hgrow = Priority.NEVER
+//                        }
+                        imageview(locCard2) {
+                            scaleX = 0.2
+                            scaleY = 0.2
+                            hgrow = Priority.NEVER
+
+                        }
+
+//                        maxHeight(50.0)
+//                        maxWidth(50.0)
+                        style {
+                            backgroundColor += c("#cecece")
+                            borderColor += box(c("#a1a1a1"))
+                            minWidth = 200.px
+                        }
+                        vboxConstraints {
+                            marginBottom = 0.0
+                            vGrow = Priority.NEVER
+                        }
+                        setMaxSize(6.0, 3.0)
+
+                    } // hBox
+
+                    style {
+                        backgroundColor += c("#fefece")
+                        borderColor += box(c("#a1a1a1"))
+                        minWidth = 200.px
+                    }
+
+//                    maxHeight(50.0)
+//                    maxWidth(50.0)
+                    setMaxSize(4.0, 7.0)
+
+                } // vBox
+                layoutX = locXDealer + 200
+                layoutY = locYDealer
+                setMaxSize(6.0, 7.0)
+            } // end group
+
+            // Player 2
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer + 400
+                y = locYDealer + 100
+            }
+
+            // Player 3
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer + 400
+                y = locYDealer + 400
+            }
+
+            // Player 4
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer + 200
+                y = locYDealer + 500
+            }
+
+            // Player 5 : Opp to Dealer
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer + 0
+                y = locYDealer + 500
+            }
+
+            // Player 6 : Opp to Player 9
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer - 200
+                y = locYDealer + 500
+            }
+
+            // Player 7 : Opp to Player 3
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer - 360
+                y = locYDealer + 400
+            }
+
+            // Player 8 : Opp to Player 2
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer - 360
+                y = locYDealer + 100
+            }
+
+
+            // Player 1
+            imageview(locHomerImg) {
+                scaleX = 0.2
+                scaleY = 0.2
+                x = locXDealer - 200
+                y = locYDealer
+            }
+
+        }
+    }
+}
